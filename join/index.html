@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join a Farm on VeriSlí</title>
+  <meta name="description" content="Accept your VeriSlí farm invitation as Admin or Viewer.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="../images/favicon-64.png" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <style>
+    :root {
+      --deep-green: #1B4332;
+      --dark-green: #0b3324;
+      --leaf-green: #4A7C3F;
+      --gold: #B8960C;
+      --cream: #f8f6ee;
+      --card-bg: #ffffff;
+      --subtle-bg: #f8fafc;
+      --border: #e2e8f0;
+      --text-primary: #111111;
+      --text-secondary: #374151;
+      --text-muted: #64748b;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--cream);
+      color: var(--text-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 48px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px -12px rgba(10, 18, 32, 0.16);
+    }
+    .card-header {
+      background: var(--deep-green);
+      color: #ffffff;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .card-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 2px;
+    }
+    .brand-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .brand-subtitle {
+      font-size: 13px;
+      color: #d1fae5;
+    }
+    .card-body {
+      padding: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      line-height: 1.25;
+      color: var(--text-primary);
+    }
+    .lead {
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+    .code-panel {
+      background: var(--subtle-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .code-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .code-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--text-primary);
+      user-select: all;
+      word-break: break-all;
+      margin-bottom: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.15s ease;
+    }
+    .btn:hover { opacity: 0.92; }
+    .btn-primary {
+      background: var(--deep-green);
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .btn-outline {
+      background: #ffffff;
+      color: var(--deep-green);
+      border: 1.5px solid var(--deep-green);
+    }
+    .steps {
+      margin: 20px 0;
+      padding: 16px 18px;
+      background: var(--subtle-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .steps-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .steps ol {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+    .steps li + li {
+      margin-top: 6px;
+    }
+    .store-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    @media (max-width: 420px) {
+      .store-row { grid-template-columns: 1fr; }
+    }
+    .store-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 14px;
+      border-radius: 10px;
+      background: #111111;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="card-header">
+      <img src="../images/verisli-logo.png" alt="VeriSlí">
+      <div>
+        <div class="brand-title">VeriSlí</div>
+        <div class="brand-subtitle">Farm Compliance &amp; Record Keeping</div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <h1>You&apos;ve been invited to join a farm</h1>
+      <p class="lead">
+        Use the invite code below to join the farm on VeriSlí as <strong>Admin</strong> or <strong>Viewer</strong>.
+      </p>
+
+      <div class="code-panel" id="codePanel">
+        <div class="code-label">Your Invite Code</div>
+        <div class="code-value" id="inviteCodeDisplay">XXXX-XXXX-XXXX</div>
+        <button type="button" class="btn btn-outline" id="copyCodeBtn">
+          Copy Invite Code
+        </button>
+      </div>
+
+      <a class="btn btn-primary" id="openAppBtn" href="verisli://join">
+        Open in VeriSlí App
+      </a>
+
+      <div class="steps">
+        <div class="steps-title">How to Join in 3 Steps</div>
+        <ol>
+          <li><strong>Download VeriSlí</strong> (free on the App Store or Google Play below).</li>
+          <li><strong>Tap &ldquo;Sign Up&rdquo;</strong> in the app and select your invited role (<strong>Admin</strong> or <strong>Viewer</strong>).</li>
+          <li><strong>Paste this Invite Code</strong> (<code id="stepCodeText">XXXX-XXXX-XXXX</code>) on the Sign-Up screen.</li>
+        </ol>
+      </div>
+
+      <div class="store-row">
+        <a class="store-btn" href="https://apps.apple.com/app/id6763058834" target="_blank" rel="noopener noreferrer">
+          App Store (iOS)
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.verisli.app" target="_blank" rel="noopener noreferrer">
+          Google Play (Android)
+        </a>
+      </div>
+
+      <p class="footer-note">
+        Invitations expire 7 days after they are sent. If your code has expired, ask the Farm Owner to resend your invitation.
+      </p>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      function formatInviteCode(raw) {
+        if (!raw) return "";
+        var cleaned = String(raw).replace(/[\s\-–—"'`“”‘’\u200B-\u200D\uFEFF]/g, "").toUpperCase();
+        if (/^[ABCDEFGHJKMNPQRSTVWXYZ23456789]{12}$/.test(cleaned)) {
+          return cleaned.slice(0, 4) + "-" + cleaned.slice(4, 8) + "-" + cleaned.slice(8, 12);
+        }
+        return String(raw).trim();
+      }
+
+      var params = new URLSearchParams(window.location.search);
+      var rawCode = params.get("code") || "";
+      var formatted = formatInviteCode(rawCode);
+      var codeDisplay = document.getElementById("inviteCodeDisplay");
+      var stepCodeText = document.getElementById("stepCodeText");
+      var copyBtn = document.getElementById("copyCodeBtn");
+      var openAppBtn = document.getElementById("openAppBtn");
+
+      if (formatted) {
+        codeDisplay.textContent = formatted;
+        stepCodeText.textContent = formatted;
+        openAppBtn.href = "verisli://join?code=" + encodeURIComponent(formatted);
+      } else {
+        codeDisplay.textContent = "Check your invitation email";
+        copyBtn.style.display = "none";
+      }
+
+      copyBtn.addEventListener("click", function () {
+        if (!formatted) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(formatted).then(function () {
+            copyBtn.textContent = "Copied: " + formatted;
+          }).catch(function () {
+            window.prompt("Copy your invite code:", formatted);
+          });
+        } else {
+          window.prompt("Copy your invite code:", formatted);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

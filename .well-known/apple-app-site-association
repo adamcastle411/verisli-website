@@ -1,0 +1,28 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4FQCR2A58X.com.verisli.verisli",
+        "appIDs": [
+          "4FQCR2A58X.com.verisli.verisli"
+        ],
+        "paths": [
+          "/join",
+          "/join/*",
+          "/join*"
+        ],
+        "components": [
+          {
+            "/": "/join",
+            "comment": "Matches farm invitation deep links at /join?code=XXXX-XXXX-XXXX"
+          },
+          {
+            "/": "/join/*",
+            "comment": "Matches nested farm invitation paths"
+          }
+        ]
+      }
+    ]
+  }
+}
