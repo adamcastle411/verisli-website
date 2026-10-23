@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.verisli.app",
+      "sha256_cert_fingerprints": [
+        "48:1A:85:C1:C4:62:EB:35:CD:6C:30:99:0F:00:8E:7B:5E:8A:81:53:B7:EA:E5:7D:97:5D:F9:C9:00:78:F1:13"
+      ]
+    }
+  }
+]
